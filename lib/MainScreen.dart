@@ -27,7 +27,7 @@ class _InputPageState extends State<InputPage> {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
         ),
         centerTitle: true,
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.black87,
         foregroundColor: Colors.white,
       ),
       body: Container(
@@ -49,7 +49,7 @@ class _InputPageState extends State<InputPage> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
-                            color: Colors.pink,
+                            color: Colors.white,
                           ),
                           color: selectedCard == Gender.male
                               ? Colors.pink
@@ -95,7 +95,7 @@ class _InputPageState extends State<InputPage> {
                               ? Colors.pink
                               : Colors.black,
                           border: Border.all(
-                            color: Colors.pink,
+                            color: Colors.white,
                           ),
                         ),
                         child: Column(
@@ -154,7 +154,7 @@ class _InputPageState extends State<InputPage> {
                                 Text(
                                   "cm",
                                   style: TextStyle(
-                                      color: Colors.pink,
+                                      color: Colors.white,
                                       fontSize: 19,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -385,7 +385,7 @@ class _InputPageState extends State<InputPage> {
               child: Container(
                 height: 80,
                 width: double.infinity,
-                color: Colors.pink,
+                color: Colors.pinkAccent,
                 // ignore: prefer_const_constructors
                 child: Center(
                   // ignore: prefer_const_constructors
