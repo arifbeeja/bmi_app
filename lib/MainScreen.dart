@@ -17,7 +17,7 @@ class _InputPageState extends State<InputPage> {
   int sliderValue = 0;
   int weight = 40;
   int Age = 10;
-  // int height=0;
+  //int height=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -166,9 +166,7 @@ class _InputPageState extends State<InputPage> {
                                 GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      if (sliderValue < 250) {
-                                        sliderValue++;
-                                      }
+                                      if (sliderValue > 0) sliderValue--;
                                     });
                                   },
                                   child: CircleAvatar(
@@ -195,7 +193,9 @@ class _InputPageState extends State<InputPage> {
                                 GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      if (sliderValue > 0) sliderValue--;
+                                      if (sliderValue < 250) {
+                                        sliderValue++;
+                                      }
                                     });
                                   },
                                   child: CircleAvatar(
@@ -254,7 +254,7 @@ class _InputPageState extends State<InputPage> {
                                 GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      weight--;
+                                      if (weight > 1) weight--;
                                     });
                                   },
                                   child: CircleAvatar(
@@ -272,7 +272,7 @@ class _InputPageState extends State<InputPage> {
                                 GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      if (weight > 0) weight++;
+                                      weight++;
                                     });
                                   },
                                   child: CircleAvatar(
@@ -299,6 +299,14 @@ class _InputPageState extends State<InputPage> {
                   ),
                   Expanded(
                     child: Container(
+                        margin: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.black,
+                          border: Border.all(
+                            color: Colors.pink,
+                          ),
+                        ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           // ignore: prefer_const_literals_to_create_immutables
@@ -324,7 +332,7 @@ class _InputPageState extends State<InputPage> {
                                 GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      Age--;
+                                      if (Age > 1) Age--;
                                     });
                                   },
                                   child: CircleAvatar(
@@ -342,7 +350,7 @@ class _InputPageState extends State<InputPage> {
                                 GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      if (Age > 0) Age++;
+                                      Age++;
                                     });
                                   },
                                   child: CircleAvatar(
@@ -357,14 +365,6 @@ class _InputPageState extends State<InputPage> {
                               ],
                             )
                           ],
-                        ),
-                        margin: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.black,
-                          border: Border.all(
-                            color: Colors.pink,
-                          ),
                         )),
                   ),
                 ],
