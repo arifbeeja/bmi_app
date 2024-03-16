@@ -214,9 +214,9 @@ class _InputPageState extends State<InputPage> {
                         margin: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.black,
+                          color: Colors.black54,
                           border: Border.all(
-                            color: Colors.pink,
+                            color: Colors.white,
                           ),
                         )),
                   ),
@@ -258,11 +258,11 @@ class _InputPageState extends State<InputPage> {
                                     });
                                   },
                                   child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
+                                    backgroundColor: Colors.white,
                                     radius: 25,
                                     child: Icon(
                                       FontAwesomeIcons.minus,
-                                      color: Colors.white,
+                                      color: Colors.black,
                                     ),
                                   ),
                                 ),
@@ -276,11 +276,11 @@ class _InputPageState extends State<InputPage> {
                                     });
                                   },
                                   child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
+                                    backgroundColor: Colors.white,
                                     radius: 25,
                                     child: Icon(
                                       FontAwesomeIcons.plus,
-                                      color: Colors.white,
+                                      color: Colors.black,
                                     ),
                                   ),
                                 ),
@@ -293,7 +293,7 @@ class _InputPageState extends State<InputPage> {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.black,
                           border: Border.all(
-                            color: Colors.pink,
+                            color: Colors.white,
                           ),
                         )),
                   ),
@@ -304,7 +304,7 @@ class _InputPageState extends State<InputPage> {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.black,
                           border: Border.all(
-                            color: Colors.pink,
+                            color: Colors.white,
                           ),
                         ),
                         child: Column(
@@ -336,11 +336,11 @@ class _InputPageState extends State<InputPage> {
                                     });
                                   },
                                   child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
+                                    backgroundColor: Colors.white,
                                     radius: 25,
                                     child: Icon(
                                       FontAwesomeIcons.minus,
-                                      color: Colors.white,
+                                      color: Colors.black,
                                     ),
                                   ),
                                 ),
@@ -354,11 +354,11 @@ class _InputPageState extends State<InputPage> {
                                     });
                                   },
                                   child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
+                                    backgroundColor: Colors.white,
                                     radius: 25,
                                     child: Icon(
                                       FontAwesomeIcons.plus,
-                                      color: Colors.white,
+                                      color: Colors.black,
                                     ),
                                   ),
                                 ),
@@ -385,7 +385,7 @@ class _InputPageState extends State<InputPage> {
               child: Container(
                 height: 80,
                 width: double.infinity,
-                color: Colors.pinkAccent,
+                color: Colors.pink,
                 // ignore: prefer_const_constructors
                 child: Center(
                   // ignore: prefer_const_constructors
